@@ -24,7 +24,7 @@ button:hover {
 }
 button:active {
   background-color: #1a1a1a;
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 button:focus:not(:focus-visible) {
   outline: none;
