@@ -1,0 +1,65 @@
+body {
+  background-color: #171717;
+  color: #ececec;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent; /* 기본 상태에서는 투명한 테두리 */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0d0d0d;
+  color: #ececec;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s, transform 0.1s;
+}
+button:hover {
+  border-color: #646cff; /* 호버 시 보라색 테두리 */
+}
+button:active {
+  background-color: #1a1a1a;
+  transform: scale(0.95);
+}
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+button:focus {
+  border-color: #646cff; /* 포커스 시 보라색 테두리 */
+}
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid transparent; /* 기본 상태에서는 투명한 테두리 */
+  padding: 0.6em 0.8em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: #0d0d0d;
+  color: #ececec;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+input:hover {
+  border-color: #646cff; /* 호버 시 보라색 테두리 */
+}
+input:focus:not(:focus-visible) {
+  outline: none;
+}
+input:focus {
+  border-color: #646cff;
+}
+input:focus-visible {
+  border-color: #646cff; /* 포커스 시 보라색 테두리 */
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+img {
+  border-radius: 6px;
+}
