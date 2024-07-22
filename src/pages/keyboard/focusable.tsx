@@ -41,6 +41,11 @@ const TabIndex = ({}: TabIndexProps) => {
         <div tabIndex={0}>포커스를 받을 수 있는 div</div>
         <img tabIndex={0} src={arrow} className="w-10" />
       </div>
+
+      <div className="flex flex-col gap-2">
+        <h1 className="text-3xl font-bold">Focus outline</h1>
+        <button>여기를 포커스 해주세요.</button>
+      </div>
     </main>
   );
 };
