@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import arrow from "../../assets/arrow.svg";
 
 interface TabIndexProps {}
 
 const TabIndex = ({}: TabIndexProps) => {
+  const goToNextStep = () => {
+    alert("next step");
+  };
   return (
     <main className="p-10 flex flex-col gap-14">
       <h1 className="text-3xl font-bold">Tabindex를 사용한 키보드 포커싱</h1>
@@ -39,7 +42,19 @@ const TabIndex = ({}: TabIndexProps) => {
       <div className="flex flex-col gap-2">
         <h2 className="text-2xl font-semibold">3. 포커싱 설정하기</h2>
         <div tabIndex={0}>포커스를 받을 수 있는 div</div>
-        <img tabIndex={0} src={arrow} className="w-10" />
+        <img
+          onClick={goToNextStep}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              goToNextStep();
+            }
+          }}
+          src={arrow}
+          alt="다음 페이지로 이동"
+          className="w-10"
+        />
       </div>
 
       <div className="flex flex-col gap-2">
